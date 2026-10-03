@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="cfdGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="streamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+  <!-- Background rounded hexagon/squircle -->
+  <rect width="64" height="64" rx="16" fill="#0f172a" />
+  <rect x="1" y="1" width="62" height="62" rx="15" stroke="url(#cfdGrad)" stroke-width="2" stroke-opacity="0.6" />
+  
+  <!-- Streamlines -->
+  <path d="M 6 18 Q 24 14, 42 16 T 58 18" stroke="url(#streamGrad)" stroke-width="2" stroke-linecap="round" />
+  <path d="M 6 46 Q 24 50, 42 48 T 58 46" stroke="url(#streamGrad)" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Aerodynamic Airfoil Shape -->
+  <path d="M 12 32 C 16 22, 34 23, 52 32 C 34 37, 16 38, 12 32 Z" fill="url(#cfdGrad)" />
+  <circle cx="17" cy="32" r="2.5" fill="#ffffff" />
+  
+  <!-- Vortex trailing indicator -->
+  <circle cx="56" cy="30" r="1.5" fill="#38bdf8" opacity="0.8" />
+  <circle cx="59" cy="33" r="1" fill="#22d3ee" opacity="0.6" />
+</svg>
